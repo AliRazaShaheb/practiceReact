@@ -1,6 +1,11 @@
 import "./blueStyle.css";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+import { useState } from "react";
 
 const FormBlue = () => {
+  const [startDate, setStartDate] = useState(new Date());
   return (
     <form className="arz-container">
       <div className="inputF">
@@ -8,10 +13,13 @@ const FormBlue = () => {
         <input type="text" id="fullName" />
       </div>
 
-      <div>
+      <div className="dob_city">
         <div className="inputF">
           <label htmlFor="dob">Date of Birth:</label>
-          <input type="date" id="dob" />
+          <DatePicker
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
         </div>
 
         <div className="inputF">
@@ -29,7 +37,13 @@ const FormBlue = () => {
         <label htmlFor="description">
           Please take a moment to describe your intended area of study:
         </label>
-        <textarea name="" id="description" cols="30" rows="8"></textarea>
+        <textarea
+          name=""
+          id="description"
+          cols="30"
+          rows="8"
+          placeholder="Enter details here"
+        ></textarea>
       </div>
     </form>
   );

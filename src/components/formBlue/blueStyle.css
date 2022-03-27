@@ -9,9 +9,67 @@
 }
 
 .arz-container {
-  width: 25rem;
+  width: 30rem;
   height: 35rem;
   background-color: rgb(37, 150, 190);
   padding: 1rem;
   font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  color: aliceblue;
+}
+
+.inputF {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.inputF input {
+  width: 100%;
+  height: 2.5rem;
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  outline: none;
+  padding-left: 0.2rem;
+}
+.inputF label {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+.inputF textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  padding: 0.2rem;
+}
+.inputF textarea::placeholder {
+  color: aliceblue;
+}
+
+.dob_city {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.dob_city .inputF:first-child {
+  flex: 4;
+}
+.dob_city .inputF:last-child {
+  flex: 6;
+}
+
+.inputF textarea,
+.inputF input {
+  color: yellow;
+  font-size: 1rem;
 }
