@@ -11,6 +11,7 @@ import { useDispatch, useSelector } from "react-redux";
 import ArzApp from "./ArzApp";
 import CalculatorApp from "./components/calculator/CalculatorApp";
 import UserFormValidation from "./components/form/UserFormValidation";
+import FormBlue from "./components/formBlue/FormBLue";
 import MyPromises from "./components/mypromises/MyPromises";
 import PaginationApp from "./components/pagination/PaginationApp";
 import SearchApp from "./components/searchbar/SearchApp";
@@ -45,7 +46,9 @@ export default function App() {
         {/* <UserFormValidation /> feild level validation pending work */}
         {/* <PaginationApp /> */}
         {/*********** practice *********/}
-        <ArzApp />
+        {/* <ArzApp /> */}
+
+        <FormBlue />
       </div>
     </div>
   );
